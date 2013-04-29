@@ -201,8 +201,8 @@ opencv_file="${opencv_dir}.tar.gz"
 opencv_url="https://s3.amazonaws.com/loku-python/${opencv_dir}.tar.bz2"
 
 cache_target=${cache}/${cmake_file}
-build_target=${build}/.heroku
-target=/app/.heroku
+build_target=${build}/.local
+target=/app/.local
 
 if [ ! -f ${cache_target} ]; then
   echo "No cached compile detected. Bulding..." | indent
